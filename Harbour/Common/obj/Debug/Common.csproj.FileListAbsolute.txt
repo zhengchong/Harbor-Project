@@ -1,0 +1,11 @@
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\Common.dll
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\Common.pdb
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\obj\Debug\Common.dll
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\obj\Debug\Common.pdb
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\Common.dll.config
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\EntityFramework.dll
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\EntityFramework.xml
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
