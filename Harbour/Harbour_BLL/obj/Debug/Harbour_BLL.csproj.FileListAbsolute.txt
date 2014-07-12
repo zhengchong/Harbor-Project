@@ -15,3 +15,20 @@ c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_BLL\bin\Deb
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_BLL\obj\Debug\Harbour_BLL.dll
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_BLL\obj\Debug\Harbour_BLL.pdb
+D:\Harbour\Harbour_BLL\bin\Debug\Harbour_BLL.dll.config
+D:\Harbour\Harbour_BLL\bin\Debug\Harbour_BLL.dll
+D:\Harbour\Harbour_BLL\bin\Debug\Harbour_BLL.pdb
+D:\Harbour\Harbour_BLL\bin\Debug\Common.dll
+D:\Harbour\Harbour_BLL\bin\Debug\EntityFramework.dll
+D:\Harbour\Harbour_BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Harbour\Harbour_BLL\bin\Debug\Harbour_DAL.dll
+D:\Harbour\Harbour_BLL\bin\Debug\Model.dll
+D:\Harbour\Harbour_BLL\bin\Debug\Common.pdb
+D:\Harbour\Harbour_BLL\bin\Debug\Harbour_DAL.pdb
+D:\Harbour\Harbour_BLL\bin\Debug\Model.pdb
+D:\Harbour\Harbour_BLL\bin\Debug\EntityFramework.xml
+D:\Harbour\Harbour_BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Harbour\Harbour_BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Harbour\Harbour_BLL\obj\Debug\Harbour_BLL.csprojResolveAssemblyReference.cache
+D:\Harbour\Harbour_BLL\obj\Debug\Harbour_BLL.dll
+D:\Harbour\Harbour_BLL\obj\Debug\Harbour_BLL.pdb

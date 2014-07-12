@@ -13,3 +13,18 @@ c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_DAL\bin\Deb
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_DAL\obj\Debug\Harbour_DAL.dll
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Harbour_DAL\obj\Debug\Harbour_DAL.pdb
+D:\Harbour\Harbour_DAL\bin\Debug\Harbour_DAL.dll.config
+D:\Harbour\Harbour_DAL\bin\Debug\Harbour_DAL.dll
+D:\Harbour\Harbour_DAL\bin\Debug\Harbour_DAL.pdb
+D:\Harbour\Harbour_DAL\bin\Debug\Common.dll
+D:\Harbour\Harbour_DAL\bin\Debug\EntityFramework.dll
+D:\Harbour\Harbour_DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Harbour\Harbour_DAL\bin\Debug\Model.dll
+D:\Harbour\Harbour_DAL\bin\Debug\Common.pdb
+D:\Harbour\Harbour_DAL\bin\Debug\Model.pdb
+D:\Harbour\Harbour_DAL\bin\Debug\EntityFramework.xml
+D:\Harbour\Harbour_DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Harbour\Harbour_DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Harbour\Harbour_DAL\obj\Debug\Harbour_DAL.csprojResolveAssemblyReference.cache
+D:\Harbour\Harbour_DAL\obj\Debug\Harbour_DAL.dll
+D:\Harbour\Harbour_DAL\obj\Debug\Harbour_DAL.pdb

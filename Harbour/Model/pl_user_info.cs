@@ -14,6 +14,11 @@ namespace Model
     
     public partial class pl_user_info
     {
+        public pl_user_info()
+        {
+            this.pl_user_role_info = new HashSet<pl_user_role_info>();
+        }
+    
         public int user_id { get; set; }
         public string user_name { get; set; }
         public string user_pswd { get; set; }
@@ -22,5 +27,7 @@ namespace Model
         public int user_latest_editor { get; set; }
         public System.DateTime user_updated_time { get; set; }
         public Nullable<int> user_record_status { get; set; }
+    
+        public virtual ICollection<pl_user_role_info> pl_user_role_info { get; set; }
     }
 }

@@ -21,5 +21,11 @@ namespace Harbour_BLL
             DALMain dal = new DALMain();
             return dal.getChildItemByGkey(gkey);
         }
+
+        public pl_func_parameters getFuncParametersByMenuTitle(string title)
+        {
+            DALMain dal = new DALMain();
+            return dal.getFuncParametersByMenuTitle(title);
+        }
     }
 }

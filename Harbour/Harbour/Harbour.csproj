@@ -63,6 +63,30 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRoleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoleInfo.Designer.cs">
+      <DependentUpon>frmRoleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserInfo.Designer.cs">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVesselBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVesselBusiness.Designer.cs">
+      <DependentUpon>frmVesselBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVesselInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVesselInfo.Designer.cs">
+      <DependentUpon>frmVesselInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogIn.resx">

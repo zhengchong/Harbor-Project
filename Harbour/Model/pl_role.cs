@@ -14,6 +14,12 @@ namespace Model
     
     public partial class pl_role
     {
+        public pl_role()
+        {
+            this.pl_user_role_info = new HashSet<pl_user_role_info>();
+            this.pl_function_priviledge = new HashSet<pl_function_priviledge>();
+        }
+    
         public int role_id { get; set; }
         public string role_name { get; set; }
         public int role_creator { get; set; }
@@ -21,5 +27,8 @@ namespace Model
         public int role_latest_editor { get; set; }
         public System.DateTime role_updated_time { get; set; }
         public Nullable<int> role_record_status { get; set; }
+    
+        public virtual ICollection<pl_user_role_info> pl_user_role_info { get; set; }
+        public virtual ICollection<pl_function_priviledge> pl_function_priviledge { get; set; }
     }
 }

@@ -9,3 +9,14 @@ c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Model\bin\Debug\zh-
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Model\obj\Debug\Model.dll
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Model\obj\Debug\Model.pdb
+D:\Harbour\Model\bin\Debug\Model.dll.config
+D:\Harbour\Model\bin\Debug\Model.dll
+D:\Harbour\Model\bin\Debug\Model.pdb
+D:\Harbour\Model\bin\Debug\EntityFramework.dll
+D:\Harbour\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Harbour\Model\bin\Debug\EntityFramework.xml
+D:\Harbour\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Harbour\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Harbour\Model\obj\Debug\Model.dll
+D:\Harbour\Model\obj\Debug\Model.pdb
+D:\Harbour\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

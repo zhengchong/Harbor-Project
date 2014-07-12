@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Harbour_BLL;
 
 namespace Harbour
 {
@@ -16,17 +17,30 @@ namespace Harbour
         {
             InitializeComponent();
         }
+        BLLLogin bll = new BLLLogin();
+        public bool IsQuited { get; set; }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
             Application.Exit();
+            IsQuited = true;
         }
 
-        private void frmLogIn_FormClosed(object sender, FormClosedEventArgs e)
+        private void btnLogIn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Application.Exit();
+            //判断是否可以登录
+            frmMain.userInfo = bll.getUserInfoByName(this.txtUserName.Text, this.txtPassword.Text);
+            if(frmMain.userInfo == null)
+            {
+                MessageBox.Show("no users!", "Error");
+            }
+            else
+            {
+                IsQuited = false;
+                this.Close();
+            }
+            //
         }
     }
 }

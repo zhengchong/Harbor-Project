@@ -9,3 +9,13 @@ c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\En
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\EntityFramework.xml
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\EntityFramework.SqlServer.xml
 c:\Users\khlin\documents\visual studio 2013\Projects\Harbour\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Harbour\Common\bin\Debug\Common.dll.config
+D:\Harbour\Common\bin\Debug\Common.dll
+D:\Harbour\Common\bin\Debug\Common.pdb
+D:\Harbour\Common\bin\Debug\EntityFramework.dll
+D:\Harbour\Common\bin\Debug\EntityFramework.SqlServer.dll
+D:\Harbour\Common\bin\Debug\EntityFramework.xml
+D:\Harbour\Common\bin\Debug\EntityFramework.SqlServer.xml
+D:\Harbour\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Harbour\Common\obj\Debug\Common.dll
+D:\Harbour\Common\obj\Debug\Common.pdb

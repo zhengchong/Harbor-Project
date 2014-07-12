@@ -145,8 +145,8 @@
     <EntitySetMapping Name="pl_func_parameters">
       <EntityTypeMapping TypeName="HarbourChargingModel.pl_func_parameters">
         <MappingFragment StoreEntitySet="pl_func_parameters">
-          <ScalarProperty Name="func_para_gkey" ColumnName="func_para_gkey" />
           <ScalarProperty Name="func_para_menu_title" ColumnName="func_para_menu_title" />
+          <ScalarProperty Name="func_para_gkey" ColumnName="func_para_gkey" />
           <ScalarProperty Name="func_para_function_name" ColumnName="func_para_function_name" />
           <ScalarProperty Name="func_para_function_desciption" ColumnName="func_para_function_desciption" />
           <ScalarProperty Name="func_para_control_name" ColumnName="func_para_control_name" />

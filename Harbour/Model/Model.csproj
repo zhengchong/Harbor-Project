@@ -130,7 +130,9 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="HarbourModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>HarbourModel.edmx</DependentUpon>

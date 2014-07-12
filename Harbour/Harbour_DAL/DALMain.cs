@@ -23,5 +23,11 @@ namespace Harbour_DAL
         {
             return entities.pl_menu.Where(m => m.menu_parent_key == gkey && m.menu_record_status == null).ToList();
         }
+
+        public pl_func_parameters getFuncParametersByMenuTitle(string title)
+        {
+            IList<pl_func_parameters> menuParas = entities.pl_func_parameters.Where(p => p.func_para_menu_title == title).ToList();
+            return menuParas != null && menuParas.Count > 0 ? menuParas[0] : null;
+        }
     }
 }

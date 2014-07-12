@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.lbUserName = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 0;
+            this.txtUserName.Location = new System.Drawing.Point(126, 125);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(100, 21);
+            this.txtUserName.TabIndex = 0;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 171);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 1;
+            this.txtPassword.Location = new System.Drawing.Point(126, 171);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(100, 21);
+            this.txtPassword.TabIndex = 1;
             // 
             // lbUserName
             // 
@@ -76,6 +77,7 @@
             this.btnLogIn.TabIndex = 4;
             this.btnLogIn.Text = "Log in";
             this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // btnExit
             // 
@@ -89,18 +91,19 @@
             // 
             // frmLogIn
             // 
+            this.AcceptButton = this.btnLogIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(260, 291);
+            this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUserName);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUserName);
             this.Name = "frmLogIn";
             this.Text = "frmLogIn";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogIn_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,8 +111,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lbUserName;
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.Button btnLogIn;

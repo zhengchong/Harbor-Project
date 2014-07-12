@@ -18,12 +18,15 @@ namespace Model
         public int func_priv_role_id { get; set; }
         public int func_priv_function_para_key { get; set; }
         public int func_priv_function_enable { get; set; }
-        public int func_priv_control_enable { get; set; }
-        public int func_priv_control_visable { get; set; }
+        public Nullable<int> func_priv_control_enable { get; set; }
+        public Nullable<int> func_priv_control_visable { get; set; }
         public Nullable<int> func_priv_record_status { get; set; }
         public System.DateTime func_priv_creation_time { get; set; }
         public int func_priv_creator { get; set; }
         public int func_priv_latest_editor { get; set; }
         public System.DateTime func_priv_updated_time { get; set; }
+    
+        public virtual pl_role pl_role { get; set; }
+        public virtual pl_func_parameters pl_func_parameters { get; set; }
     }
 }

@@ -143,11 +143,11 @@
       <PropertyRef Name="func_para_gkey" />
     </Key>
     <Property Name="func_para_gkey" Type="int" Nullable="false" />
-    <Property Name="func_para_menu_title" Type="int" Nullable="false" />
-    <Property Name="func_para_function_name" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="func_para_function_desciption" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="func_para_control_name" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="func_para_control_description" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="func_para_menu_title" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="func_para_function_name" Type="varchar" MaxLength="30" />
+    <Property Name="func_para_function_desciption" Type="varchar" MaxLength="30" />
+    <Property Name="func_para_control_name" Type="varchar" MaxLength="30" />
+    <Property Name="func_para_control_description" Type="varchar" MaxLength="30" />
     <Property Name="func_para_creator" Type="int" Nullable="false" />
     <Property Name="func_para_creator_time" Type="date" Nullable="false" />
     <Property Name="func_para_latest_editor" Type="int" Nullable="false" />
@@ -162,8 +162,8 @@
     <Property Name="func_priv_role_id" Type="int" Nullable="false" />
     <Property Name="func_priv_function_para_key" Type="int" Nullable="false" />
     <Property Name="func_priv_function_enable" Type="int" Nullable="false" />
-    <Property Name="func_priv_control_enable" Type="int" Nullable="false" />
-    <Property Name="func_priv_control_visable" Type="int" Nullable="false" />
+    <Property Name="func_priv_control_enable" Type="int" />
+    <Property Name="func_priv_control_visable" Type="int" />
     <Property Name="func_priv_record_status" Type="int" />
     <Property Name="func_priv_creation_time" Type="date" Nullable="false" />
     <Property Name="func_priv_creator" Type="int" Nullable="false" />
@@ -192,7 +192,7 @@
     <Key>
       <PropertyRef Name="role_id" />
     </Key>
-    <Property Name="role_id" Type="int" Nullable="false" />
+    <Property Name="role_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="role_name" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="role_creator" Type="int" Nullable="false" />
     <Property Name="role_creation_time" Type="date" Nullable="false" />
@@ -204,9 +204,9 @@
     <Key>
       <PropertyRef Name="user_id" />
     </Key>
-    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="user_name" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="user_pswd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="user_pswd" Type="varchar" MaxLength="1000" Nullable="false" />
     <Property Name="user_creator" Type="int" Nullable="false" />
     <Property Name="user_creation_time" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="user_latest_editor" Type="int" Nullable="false" />
@@ -217,7 +217,7 @@
     <Key>
       <PropertyRef Name="user_role_gkey" />
     </Key>
-    <Property Name="user_role_gkey" Type="int" Nullable="false" />
+    <Property Name="user_role_gkey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="user_role_role_id" Type="int" Nullable="false" />
     <Property Name="user_role_user_id" Type="int" Nullable="false" />
     <Property Name="user_role_creator" Type="int" Nullable="false" />

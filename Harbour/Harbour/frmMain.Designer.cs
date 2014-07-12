@@ -35,8 +35,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 391);
+            this.IsMdiContainer = true;
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "Harbour";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
 

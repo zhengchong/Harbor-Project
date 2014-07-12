@@ -22,5 +22,8 @@ namespace Model
         public int user_role_latest_editor { get; set; }
         public System.DateTime user_role_updeted_time { get; set; }
         public Nullable<int> user_role_record_status { get; set; }
+    
+        public virtual pl_role pl_role { get; set; }
+        public virtual pl_user_info pl_user_info { get; set; }
     }
 }

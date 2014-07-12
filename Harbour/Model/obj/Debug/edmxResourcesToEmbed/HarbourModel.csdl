@@ -143,16 +143,17 @@
       <PropertyRef Name="func_para_gkey" />
     </Key>
     <Property Name="func_para_gkey" Type="Int32" Nullable="false" />
-    <Property Name="func_para_menu_title" Type="Int32" Nullable="false" />
-    <Property Name="func_para_function_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="func_para_function_desciption" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="func_para_control_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="func_para_control_description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="func_para_menu_title" Type="String" Nullable="false" />
+    <Property Name="func_para_function_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="func_para_function_desciption" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="func_para_control_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="func_para_control_description" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="func_para_creator" Type="Int32" Nullable="false" />
     <Property Name="func_para_creator_time" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="func_para_latest_editor" Type="Int32" Nullable="false" />
     <Property Name="func_para_updated_time" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="func_para_record_status" Type="Int32" />
+    <NavigationProperty Name="pl_function_priviledge" Relationship="HarbourChargingModel.pl_func_parameterspl_function_priviledge" FromRole="pl_func_parameters" ToRole="pl_function_priviledge" />
   </EntityType>
   <EntityType Name="pl_function_priviledge">
     <Key>
@@ -162,13 +163,15 @@
     <Property Name="func_priv_role_id" Type="Int32" Nullable="false" />
     <Property Name="func_priv_function_para_key" Type="Int32" Nullable="false" />
     <Property Name="func_priv_function_enable" Type="Int32" Nullable="false" />
-    <Property Name="func_priv_control_enable" Type="Int32" Nullable="false" />
-    <Property Name="func_priv_control_visable" Type="Int32" Nullable="false" />
+    <Property Name="func_priv_control_enable" Type="Int32" />
+    <Property Name="func_priv_control_visable" Type="Int32" />
     <Property Name="func_priv_record_status" Type="Int32" />
     <Property Name="func_priv_creation_time" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="func_priv_creator" Type="Int32" Nullable="false" />
     <Property Name="func_priv_latest_editor" Type="Int32" Nullable="false" />
     <Property Name="func_priv_updated_time" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="pl_role" Relationship="HarbourChargingModel.pl_rolepl_function_priviledge" FromRole="pl_function_priviledge" ToRole="pl_role" />
+    <NavigationProperty Name="pl_func_parameters" Relationship="HarbourChargingModel.pl_func_parameterspl_function_priviledge" FromRole="pl_function_priviledge" ToRole="pl_func_parameters" />
   </EntityType>
   <EntityType Name="pl_menu">
     <Key>
@@ -199,6 +202,8 @@
     <Property Name="role_latest_editor" Type="Int32" Nullable="false" />
     <Property Name="role_updated_time" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="role_record_status" Type="Int32" />
+    <NavigationProperty Name="pl_user_role_info" Relationship="HarbourChargingModel.pl_rolepl_user_role_info" FromRole="pl_role" ToRole="pl_user_role_info" />
+    <NavigationProperty Name="pl_function_priviledge" Relationship="HarbourChargingModel.pl_rolepl_function_priviledge" FromRole="pl_role" ToRole="pl_function_priviledge" />
   </EntityType>
   <EntityType Name="pl_user_info">
     <Key>
@@ -206,12 +211,13 @@
     </Key>
     <Property Name="user_id" Type="Int32" Nullable="false" />
     <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="user_pswd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_pswd" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="user_creator" Type="Int32" Nullable="false" />
     <Property Name="user_creation_time" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="user_latest_editor" Type="Int32" Nullable="false" />
     <Property Name="user_updated_time" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="user_record_status" Type="Int32" />
+    <NavigationProperty Name="pl_user_role_info" Relationship="HarbourChargingModel.pl_user_infopl_user_role_info" FromRole="pl_user_info" ToRole="pl_user_role_info" />
   </EntityType>
   <EntityType Name="pl_user_role_info">
     <Key>
@@ -225,6 +231,8 @@
     <Property Name="user_role_latest_editor" Type="Int32" Nullable="false" />
     <Property Name="user_role_updeted_time" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="user_role_record_status" Type="Int32" />
+    <NavigationProperty Name="pl_role" Relationship="HarbourChargingModel.pl_rolepl_user_role_info" FromRole="pl_user_role_info" ToRole="pl_role" />
+    <NavigationProperty Name="pl_user_info" Relationship="HarbourChargingModel.pl_user_infopl_user_role_info" FromRole="pl_user_role_info" ToRole="pl_user_info" />
   </EntityType>
   <EntityType Name="tr_truckinfo">
     <Key>
@@ -300,5 +308,69 @@
     <EntitySet Name="tr_trucktimes" EntityType="Self.tr_trucktimes" />
     <EntitySet Name="vs_berthplan" EntityType="Self.vs_berthplan" />
     <EntitySet Name="vs_vesselinfo" EntityType="Self.vs_vesselinfo" />
+    <AssociationSet Name="pl_rolepl_user_role_info" Association="HarbourChargingModel.pl_rolepl_user_role_info">
+      <End Role="pl_role" EntitySet="pl_role" />
+      <End Role="pl_user_role_info" EntitySet="pl_user_role_info" />
+    </AssociationSet>
+    <AssociationSet Name="pl_user_infopl_user_role_info" Association="HarbourChargingModel.pl_user_infopl_user_role_info">
+      <End Role="pl_user_info" EntitySet="pl_user_info" />
+      <End Role="pl_user_role_info" EntitySet="pl_user_role_info" />
+    </AssociationSet>
+    <AssociationSet Name="pl_rolepl_function_priviledge" Association="HarbourChargingModel.pl_rolepl_function_priviledge">
+      <End Role="pl_role" EntitySet="pl_role" />
+      <End Role="pl_function_priviledge" EntitySet="pl_function_priviledge" />
+    </AssociationSet>
+    <AssociationSet Name="pl_func_parameterspl_function_priviledge" Association="HarbourChargingModel.pl_func_parameterspl_function_priviledge">
+      <End Role="pl_func_parameters" EntitySet="pl_func_parameters" />
+      <End Role="pl_function_priviledge" EntitySet="pl_function_priviledge" />
+    </AssociationSet>
   </EntityContainer>
+  <Association Name="pl_rolepl_user_role_info">
+    <End Type="HarbourChargingModel.pl_role" Role="pl_role" Multiplicity="1" />
+    <End Type="HarbourChargingModel.pl_user_role_info" Role="pl_user_role_info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pl_role">
+        <PropertyRef Name="role_id" />
+      </Principal>
+      <Dependent Role="pl_user_role_info">
+        <PropertyRef Name="user_role_role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="pl_user_infopl_user_role_info">
+    <End Type="HarbourChargingModel.pl_user_info" Role="pl_user_info" Multiplicity="1" />
+    <End Type="HarbourChargingModel.pl_user_role_info" Role="pl_user_role_info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pl_user_info">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="pl_user_role_info">
+        <PropertyRef Name="user_role_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="pl_rolepl_function_priviledge">
+    <End Type="HarbourChargingModel.pl_role" Role="pl_role" Multiplicity="1" />
+    <End Type="HarbourChargingModel.pl_function_priviledge" Role="pl_function_priviledge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pl_role">
+        <PropertyRef Name="role_id" />
+      </Principal>
+      <Dependent Role="pl_function_priviledge">
+        <PropertyRef Name="func_priv_role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="pl_func_parameterspl_function_priviledge">
+    <End Type="HarbourChargingModel.pl_func_parameters" Role="pl_func_parameters" Multiplicity="1" />
+    <End Type="HarbourChargingModel.pl_function_priviledge" Role="pl_function_priviledge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pl_func_parameters">
+        <PropertyRef Name="func_para_gkey" />
+      </Principal>
+      <Dependent Role="pl_function_priviledge">
+        <PropertyRef Name="func_priv_function_para_key" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

@@ -14,8 +14,13 @@ namespace Model
     
     public partial class pl_func_parameters
     {
+        public pl_func_parameters()
+        {
+            this.pl_function_priviledge = new HashSet<pl_function_priviledge>();
+        }
+    
         public int func_para_gkey { get; set; }
-        public int func_para_menu_title { get; set; }
+        public string func_para_menu_title { get; set; }
         public string func_para_function_name { get; set; }
         public string func_para_function_desciption { get; set; }
         public string func_para_control_name { get; set; }
@@ -25,5 +30,7 @@ namespace Model
         public int func_para_latest_editor { get; set; }
         public System.DateTime func_para_updated_time { get; set; }
         public Nullable<int> func_para_record_status { get; set; }
+    
+        public virtual ICollection<pl_function_priviledge> pl_function_priviledge { get; set; }
     }
 }
